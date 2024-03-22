@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --cor-primaria: #F29F05;
+    --cor-secundaria: #f1ab28;
+    --cor-texto-primaria: #B3B3B3;
+    --cor-texto-secundaria: #fff;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+p{
+    margin: 10px;
+    font-weight: 200;
+}
+
+section{
+    box-sizing: border-box;
+    /*border: 1px solid red;*/
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* INICIO NAV LOGIN */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 20px 60px 20px;
+}
+nav #nav-content{
+    height: 60px;
+    width: 1186px;
+    background-color: var(--cor-primaria);
+    border-radius: 50px;
+    padding: 10px;
+    display: flex;
+}
+nav #nav-content a{
+    margin-left: 20px;
+}
+nav #nav-content img{
+    height: 100%;
+}
+/* FIM NAV LOGIN */
+
+/* INICIO TELA DE LOGIN / CADASTRO */
+#login-content {
+    width: 900px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /*border: 1px solid blue;*/
+}
+
+#login-form {
+    padding: 20px;
+}
+
+#login-form form{
+    /*border: 1px solid green;*/
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+#login-form form label{
+    font-weight: 600;
+}
+
+#login-form input[type="text"] {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    padding: 5px 15px;
+    font-weight: 400;
+    border-radius: 10px;
+    border: 1px solid var(--cor-primaria);
+    margin-bottom: 10px;
+}
+
+#login-form a{
+    text-decoration: none;
+}
+
+#login-form #regra-senha {
+    margin-bottom: 20px;
+}
+
+#login-form #regra-senha ul{
+    font-weight: 300;
+    color: var(--cor-texto-primaria);
+    margin-left: 40px;
+    line-height: 20px;
+}
+
+#login-form #regra-senha label{
+    font-weight: 300;
+    color: var(--cor-texto-primaria);
+    line-height: 20px;
+}
+
+#botoes-login {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+button.btn-primario{
+    color: var(--cor-texto-secundaria);
+    border: 1px solid var(--cor-primaria);
+    background-color: var(--cor-primaria);
+    padding: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 10px;
+    min-width: 300px;
+    font-family: 'Poppins';
+}
+
+a.btn-secundario{
+    color: var(--cor-primaria);
+    border: 1px solid var(--cor-primaria);
+    background-color: transparent;
+    padding: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 10px;
+    min-width: 300px;
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+a.btn-secundario:hover{
+    color: var(--cor-texto-secundaria);
+    border: 1px solid var(--cor-primaria);
+    background-color: var(--cor-primaria);
+}
+
+button.btn-primario:hover{
+    border: 1px solid var(--cor-secundaria);
+    background-color: var(--cor-secundaria);
+}
+
+@media screen and (max-width: 768px) {
+    #botoes-login {
+        justify-content: center;
+        gap: 10px;
+    }
+    a.btn-secundario{
+        width: 100%;
+    }
+    button.btn-primario{
+        width: 100%;
+    }
+}
+
+/* FIM TELA DE LOGIN / CADASTRO */
