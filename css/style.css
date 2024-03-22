@@ -75,6 +75,7 @@ nav .nav-item input[type="text"] {
 nav .nav-item i{
     color: var(--cor-texto-secundaria);
     font-size: 20px;
+    cursor: pointer;
 }
 
 nav .nav-item:first-child i {
@@ -82,14 +83,14 @@ nav .nav-item:first-child i {
 }
 
 
-/*
+
 nav #nav-content a{
     margin-left: 20px;
 }
 nav #nav-content img{
     height: 100%;
 }
-*/
+
 /* FIM NAV LOGIN */
 
 /* INICIO TELA DE LOGIN / CADASTRO */
