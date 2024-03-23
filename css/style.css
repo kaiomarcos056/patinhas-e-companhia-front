@@ -23,8 +23,8 @@ p{
 }
 
 section{
+    border: 1px solid red;
     box-sizing: border-box;
-    /*border: 1px solid red;*/
     width: 100%;
     display: flex;
     justify-content: center;
@@ -207,3 +207,42 @@ button.btn-primario:hover{
 }
 
 /* FIM TELA DE LOGIN / CADASTRO */
+
+
+/* INICIO FOOTER */
+footer{
+    background-color: #F4F4F4;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+footer #footer-content{
+    /*border: 1px solid red;*/
+    display: flex;
+    flex-wrap: wrap;
+    width: 1186px;
+    margin-bottom: 50px;
+}
+footer #footer-content .item-footer{
+    width: 25%;
+}
+footer #footer-content .item-footer h5{
+    font-weight: 500;
+    font-size: 17px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+footer #footer-content .item-footer .footer-imgs{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+footer #footer-content .item-footer .footer-imgs img{
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+footer p {
+    margin: 0;
+}
+/* FIM FOOTER */
