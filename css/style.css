@@ -189,6 +189,9 @@ button.btn-primario:hover{
 
 /* FIM TELA DE LOGIN / CADASTRO */
 
+
+
+
 /* INICIO CONTENT BODY */
 #content-body{
     display: flex;
@@ -198,6 +201,7 @@ button.btn-primario:hover{
     height: 100vh;
 }
 #content-body section{
+    flex-wrap: wrap;
     width: 1186px;
     margin-bottom: 20px;
 }
@@ -205,8 +209,36 @@ button.btn-primario:hover{
     width: 100%;
     text-align: left;
     font-weight: 500;
+    margin-bottom: 20px;
 }
 /* FIM CONTENT BODY */
+
+/* INICIO PRODUTO HOME */
+#lista-produtos{
+    display: flex;
+    gap: 50px;
+}
+.item-produto{
+    flex: 1 1 150px; /* Cresce, encolhe e tem uma largura mínima de 200px */
+    border: 2px solid var(--cor-primaria);
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+#lista-produtos .item-produto img{
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+    margin-bottom: 20px;
+}
+#lista-produtos .item-produto h3{
+    font-weight: bold;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+/* FIM PRODUTO HOME */
+
 
 /* INICIO FOOTER */
 footer{
