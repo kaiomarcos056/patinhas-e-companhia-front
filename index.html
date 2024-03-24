@@ -10,8 +10,14 @@
     <!-- FONT DE ICONS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+    <!-- SwiperJs CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- SLIDER CSS -->
+    <link rel="stylesheet" href="css/slide-css.css">
 
     <title>Home</title>
 </head>
@@ -39,41 +45,115 @@
             </div>
         </div>
     </nav>
+
+    <!-- Swiper -->
+  
+
     <div id="content-body">
-        <section>
-            <h3>Conheça nossos produtos</h3>
-            <div id="lista-produtos">
-                <div class="item-produto">
-                    <img src="images/produto/racao/racao-um.jpg" alt="">
-                    <h3>Ração úmida Billy Dog PREMIUM</h3>
-                    <h3>R$ 57,96</h3>
-                </div>
-                <div class="item-produto">
-                    <img src="images/produto/racao/racao-um.jpg" alt="">
-                    <h3>Ração úmida Billy Dog PREMIUM</h3>
-                    <h3>R$ 57,96</h3>
-                </div>
-                <div class="item-produto">
-                    <img src="images/produto/racao/racao-um.jpg" alt="">
-                    <h3>Ração úmida Billy Dog PREMIUM</h3>
-                    <h3>R$ 57,96</h3>
-                </div>
-                <div class="item-produto">
-                    <img src="images/produto/racao/racao-um.jpg" alt="">
-                    <h3>Ração úmida Billy Dog PREMIUM</h3>
-                    <h3>R$ 57,96</h3>
-                </div>
+        <div class="swiper autoplay">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/banners/banner-um.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/banners/banner-dois.png" alt="">
+              </div>
             </div>
-        </section>
+            
+            <div class="swiper-pagination"></div>
+          </div>
         <section>
-            <div id="banner-pet">
-    
+            
+        </section>
+        <section id="section-item">
+            <h3>Conheça Nossos Produtos</h3>
+            <div class="swiper mySwiper container">
+              <div class="swiper-wrapper content">
+                <div class="swiper-slide card">
+                  <div class="card-content">
+                    <div class="image">
+                      <img src="images/produtos/racao/racao-um.jpg" alt="">
+                    </div>
+        
+                    <div class="name-profession">
+                      <span class="name">Someone Name</span>
+                      <span class="profession">Web Developer</span>
+                    </div>
+                  </div>
+                </div> 
+        
+                <div class="swiper-slide card">
+                  <div class="card-content">
+                    <div class="image">
+                        <img src="images/produtos/racao/racao-dois.jpg" alt="">
+                    </div>
+        
+                    <div class="name-profession">
+                      <span class="name">Someone Name</span>
+                      <span class="profession">Web Developer</span>
+                    </div>
+                  </div>
+                </div> 
+        
+                <div class="swiper-slide card">
+                  <div class="card-content">
+                    <div class="image">
+                        <img src="images/produtos/racao/racao-tres.webp" alt="">
+                    </div>
+        
+                    <div class="name-profession">
+                      <span class="name">Someone Name</span>
+                      <span class="profession">Web Developer</span>
+                    </div>
+                  </div>
+                </div> 
+        
+                <div class="swiper-slide card">
+                  <div class="card-content">
+                    <div class="image">
+                        <img src="images/produtos/racao/racao-um.jpg" alt="">
+                    </div>
+        
+                    <div class="name-profession">
+                      <span class="name">Someone Name</span>
+                      <span class="profession">Web Developer</span>
+                    </div>
+                  </div>
+                </div> 
+        
+                <div class="swiper-slide card">
+                  <div class="card-content">
+                    <div class="image">
+                        <img src="images/produtos/racao/racao-dois.jpg" alt="">
+                    </div>
+        
+                    <div class="name-profession">
+                      <span class="name">Someone Name</span>
+                      <span class="profession">Web Developer</span>
+                    </div>
+                  </div>
+                </div> 
+
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                      <div class="image">
+                          <img src="images/produtos/racao/racao-dois.jpg" alt="">
+                      </div>
+          
+                      <div class="name-profession">
+                        <span class="name">Someone Name</span>
+                        <span class="profession">Web Developer</span>
+                      </div>
+                    </div>
+                  </div> 
+        
+              </div>
             </div>
-        </section>
-    
-        <section>
-            <h3>Conheça nossos serviços</h3>
-        </section>
+        
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </section>
     </div>
 
     <footer>
@@ -134,5 +214,12 @@
         <p>Copyright© 2024 Patinhas & Companhia S/A - Todos os direitos reservados</p>
         <br>
     </footer>
+
+    <!-- SwiperJs JS -->
+    <script src="js/swiper-bundle.min.js" ></script>
+    <!-- Slide JS -->
+    <script src="js/script.js" ></script>
 </body>
+
+
 </html>
