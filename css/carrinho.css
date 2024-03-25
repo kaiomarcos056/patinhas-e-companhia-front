@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
 
 :root{
     --color-dois: #04C4D9;
@@ -7,6 +8,10 @@
 .container-box{
     /*border: 1px solid red;*/
     width: 1186px;
+}
+
+.content{
+    height: 100vh;
 }
 
 .tab-box{
@@ -48,7 +53,8 @@
 
 .content-box .content h2{
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-top: 25px;
+    margin-bottom: 50px;
 }
 
 @keyframes mover{
@@ -65,4 +71,179 @@
     background-color: var(--color-dois);
     border-radius: 10px;
     transition: all .3s ease-in-out;
+}
+
+.box{
+    width: 100%;
+    border: 3px solid #F29F05;
+    border-radius: 30px;
+    padding: 20px;
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;*/
+}
+.titulo-produto{
+    padding: 10px 20px;
+    width: 100%;
+}
+.titulo-produto h5{
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#content-carrinho{
+    /*border: 1px solid red;*/
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+#item-carrinho{
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+#frete-carrinho{
+    width: 40%;
+}
+
+.preco-content{
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.produto-content{
+    padding: 10px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.produto-content .produto-img{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.produto-content i{
+    width: 5%;
+    text-align: end;
+    color: #F29F05;
+    font-size: 30px;
+}
+
+.counter{
+    box-sizing: border-box;
+    /*border: 1px solid;*/
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+    align-items: center;
+}
+
+.counter input{
+    width: 25%;
+    text-align: center;
+    height: 100%;
+    border: 2px solid #F29F05;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 5px;
+    font-family: 'Poppins';
+}
+
+.counter button{
+    height: 100%;
+    /*border: 1px solid red;*/
+    border: none;
+    background: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.frete-titulo{
+   width: 100%;
+}
+
+.frete-titulo h5{
+    font-family: 'Modak', system-ui;
+    font-size: 30px;
+    font-weight: 200;
+    color: #938585;
+    margin-bottom: 20px;
+}
+
+.calcula-frete{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.calcula-frete input,
+.calcula-frete button{
+    font-size: 20px;
+    font-family: 'Poppins';
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 2px solid #F29F05;
+}
+
+.calcula-frete button{
+    background-color:#F29F05;
+    color: #fff;
+    font-weight: 600;
+}
+
+.calcula-frete button:hover{
+    background-color:#f1ab28;
+}
+
+.acao-carrinho {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #F29F05;
+    border-radius: 10px;
+    padding: 15px 10px;
+    margin-bottom: 20px;
+}
+
+.acao-carrinho div {
+    align-items: stretch;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.acao-carrinho .titulo-acao-carrinho {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: stretch;
+    width: 80%;
+}
+
+.titulo-acao-carrinho h5,
+.titulo-acao-carrinho p{
+   margin: 0;
+   padding: 0;
+}
+
+.titulo-acao-carrinho h5{
+    font-size: 15px;
+}
+.titulo-acao-carrinho p{
+    font-size: 12px;
 }
