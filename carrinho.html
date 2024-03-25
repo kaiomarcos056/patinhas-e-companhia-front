@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FAVICON -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- FONT DE ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- CARRINHO CSS -->
+    <link rel="stylesheet" href="css/carrinho.css">
+
+    <title>Carrinho</title>
+</head>
+<body>
+    <!-- INICIO NAVBAR -->
+    <nav>
+        <div id="nav-home">
+            <div class="nav-item" style="width: 5%;">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="nav-item" style="width: 18%;">
+                <img src="images/logo-white.svg" alt="" style="height: 100%;">
+            </div>
+            <div class="nav-item" style="width: 50%;">
+                <input type="text" placeholder="pesquisar...">
+            </div>
+            <div class="nav-item" style="width: 13%;">
+                <a href="/login.html" style="display: flex; justify-content: center; align-items: center; gap: 5px; text-decoration: none;">
+                    <i class="fa-solid fa-user-large"></i>
+                    <h5 style="display: inline-block; line-height: 12px; color: #fff; font-stretch: condensed;">Entre ou Cadastre-se</h5>
+                </a>
+            </div>
+            <div class="nav-item" style="width: 7%; justify-content: space-around;">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-heart"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- FIM NAVBAR -->
+
+    <!-- INICIO CONTEUDO -->
+    <div id="content-body" style="/*border: 1px solid;*/">
+      <div class="container-box">
+        <div class="tab-box">
+            <button class="tab-btn active">Carrinho</button>
+            <button class="tab-btn">Identificação</button>
+            <button class="tab-btn">Entrega</button>
+            <button class="tab-btn">Pagamento</button>
+            <div class="line"></div>
+        </div>
+    
+        <div class="content-box">
+    
+            <div class="content active">
+                <h2>Carrinho de compras</h2>
+                <p>vvdbdbdbdsbdndsbdvvdbdbdbdsbdndsbdvvdbdbdbdsbdndsbdvvdbdbdbdsbdndsbdvvdbdbdbdsbdndsbd</p>
+            </div>
+    
+            <div class="content">
+                <h2>Identificação</h2>
+                <p>vvdbdbdbdsbdndsbdvvdbdbdbdsbdndsbdvvdbdbdbdsbdndsbdvvdbdbdbdsbdndsbdvvdbdbdbdsbdndsbd</p>
+            </div>
+            
+        </div>
+      </div>
+    </div>
+    <!-- FIM CONTEUDO -->
+
+    <!-- slick JS -->
+    <script src="js/script.js"></script>
+    <script>
+        const tabs = document.querySelectorAll('.tab-btn');
+        const contents = document.querySelectorAll('.content');
+
+        tabs.forEach((tab, index) => {
+            tab.addEventListener('click', (evento) => {
+                tabs.forEach(tab => {tab.classList.remove('active')});
+                tab.classList.add('active');
+
+                let line = document.querySelector('.line');
+                line.style.width = evento.target.offsetWidth + "px";
+                line.style.left = evento.target.offsetLeft + "px";
+
+                contents.forEach(content => {content.classList.remove('active')});
+                contents[index].classList.add('active');
+            })
+        })
+    </script>
+</body>
+
+
+</html>

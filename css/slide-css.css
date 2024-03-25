@@ -20,8 +20,9 @@
 }
 
 .slick-prev:before, .slick-next:before {
+    font-weight: bold;
     background-color: #F29F05;
     border-radius: 50%;
-    padding: 10px;
-    font-size: 20px;
+    padding: 15px;
+    font-size: 10px;
 }
