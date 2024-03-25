@@ -11,8 +11,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- SwiperJs CSS -->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!--<link rel="stylesheet" href="css/swiper-bundle.min.css">-->
 
+    <!-- SLICK CSS -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -46,25 +50,150 @@
         </div>
     </nav>
 
-    <!-- Swiper -->
-  
+    <div id="content-body" style="border: 1px solid;">    
+        <div style="border: 1px solid red;" class="autoplay">
+          <div>
+              <img src="images/banners/banner-um.png" alt="">
+          </div>
+          <div>
+              <img src="images/banners/banner-dois.png" alt="">
+          </div>
+        </div>
+        <br>
+        <div style="border: 1px solid red;" class="promocoes">
+          <div style="margin-left: 20px; margin-right: 20px;">
+              <img src="images/promocoes/promocao-um.png" alt="">
+          </div>
+          <div style="margin-left: 20px; margin-right: 20px;">
+            <img src="images/promocoes/promocao-dois.png" alt="">
+          </div>
+          <div style="margin-left: 20px; margin-right: 20px;">
+            <img src="images/promocoes/promocao-tres.png" alt="">
+          </div>
+        </div>
+      
+        <!-- 
+        <section>
+            <div class="swiper autoplay">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="images/banners/banner-um.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/banners/banner-dois.png" alt="">
+                  </div>
+                </div>
+                
+                <div class="swiper-pagination pag-banner"></div>
+            </div>
+        </section>
+        <br>
+        <section>
+            <div class="swiper promocoes">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="images/promocoes/promocao-um.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/promocoes/promocao-dois.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/promocoes/promocao-tres.png" alt="">
+                  </div>
+                </div>
+            </div>
+        </section>
 
-    <div id="content-body">
-        <div class="swiper autoplay">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="images/banners/banner-um.png" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="images/banners/banner-dois.png" alt="">
+        <section id="section-item">
+            <h3>Conheça Nossos Serviços</h3>
+            <div class="swiper mySwiper container">
+              <div class="swiper-wrapper content">
+                <div class="swiper-slide card">
+                  <div class="card-content">
+                    <div class="image">
+                      <img src="images/produtos/racao/racao-um.jpg" alt="">
+                    </div>
+        
+                    <div class="name-profession">
+                      <span class="name">Someone Name</span>
+                      <span class="profession">Web Developer</span>
+                    </div>
+                  </div>
+                </div> 
+        
+                <div class="swiper-slide card">
+                  <div class="card-content">
+                    <div class="image">
+                        <img src="images/produtos/racao/racao-dois.jpg" alt="">
+                    </div>
+        
+                    <div class="name-profession">
+                      <span class="name">Someone Name</span>
+                      <span class="profession">Web Developer</span>
+                    </div>
+                  </div>
+                </div> 
+        
+                <div class="swiper-slide card">
+                  <div class="card-content">
+                    <div class="image">
+                        <img src="images/produtos/racao/racao-tres.webp" alt="">
+                    </div>
+        
+                    <div class="name-profession">
+                      <span class="name">Someone Name</span>
+                      <span class="profession">Web Developer</span>
+                    </div>
+                  </div>
+                </div> 
+        
+                <div class="swiper-slide card">
+                  <div class="card-content">
+                    <div class="image">
+                        <img src="images/produtos/racao/racao-um.jpg" alt="">
+                    </div>
+        
+                    <div class="name-profession">
+                      <span class="name">Someone Name</span>
+                      <span class="profession">Web Developer</span>
+                    </div>
+                  </div>
+                </div> 
+        
+                <div class="swiper-slide card">
+                  <div class="card-content">
+                    <div class="image">
+                        <img src="images/produtos/racao/racao-dois.jpg" alt="">
+                    </div>
+        
+                    <div class="name-profession">
+                      <span class="name">Someone Name</span>
+                      <span class="profession">Web Developer</span>
+                    </div>
+                  </div>
+                </div> 
+
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                      <div class="image">
+                          <img src="images/produtos/racao/racao-dois.jpg" alt="">
+                      </div>
+          
+                      <div class="name-profession">
+                        <span class="name">Someone Name</span>
+                        <span class="profession">Web Developer</span>
+                      </div>
+                    </div>
+                  </div> 
+        
               </div>
             </div>
-            
-            <div class="swiper-pagination"></div>
-          </div>
-        <section>
-            
+        
+            <div class="swiper-button-next next-produtos"></div>
+            <div class="swiper-button-pre prev-produtos"></div>
+            <div class="swiper-pagination pag-produtos"></div>
         </section>
+
         <section id="section-item">
             <h3>Conheça Nossos Produtos</h3>
             <div class="swiper mySwiper container">
@@ -153,7 +282,8 @@
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-pagination"></div>
-          </section>
+        </section>
+        -->
     </div>
 
     <footer>
@@ -216,9 +346,33 @@
     </footer>
 
     <!-- SwiperJs JS -->
-    <script src="js/swiper-bundle.min.js" ></script>
+    <!--<script src="js/swiper-bundle.min.js" ></script>-->
     <!-- Slide JS -->
-    <script src="js/script.js" ></script>
+    <!--<script src="js/script.js" ></script>-->
+
+    <!-- SwiperJs JS -->
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
+    <script type="text/javascript">
+      $('.autoplay').slick({
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+      });
+
+      $('.promocoes').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true
+      });
+    </script>
 </body>
 
 

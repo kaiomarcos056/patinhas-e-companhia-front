@@ -35,7 +35,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20px 20px 60px 20px;
+    margin: 20px 20px 40px 20px;
 }
 nav #nav-content{
     height: 60px;
@@ -220,63 +220,7 @@ button.btn-primario:hover{
 /* FIM CONTENT BODY */
 
 /* INICIO PRODUTO HOME */
-#section-item {
-    position: relative;
-    height: 450px;
-    width: 1180px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .swiper { 
-    width: 1000px;
-  }
-  
-  .container {
-    border-radius: 20px;
-  }
-  
-  .card{
-    width: 200px !important;
-    padding: 20px;
-  }
-  
-  .card .image {
-    height: 200px;
-    margin-bottom: 10px;
-  }
-  
-  .card .image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .card {
-    position: relative;
-    border: 3px solid #F29F05;
-    border-radius: 20px;
-    width: 25%;
-  }
-  
-  .card .card-content {
-    position: relative;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .swiper-pagination-bullet {
-    height: 7px;
-    width: 26px;
-    background: #F29F05;
-    border-radius: 25px;
-  }
-  
-  .swiper-button-next,
-  .swiper-button-prev {
-    color: #F29F05;
-  }
+
 /* FIM PRODUTO HOME */
 
 
